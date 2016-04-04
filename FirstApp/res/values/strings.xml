@@ -8,6 +8,7 @@
     <string name="a2CallbtnName">a2Call</string>
     <string name="a3CallbtnName">a3Call</string>
     <string name="mainCallBtnName">MainCall</string>
+    <string name="TestCallBtnName">TestCall</string>
     
 
 </resources>

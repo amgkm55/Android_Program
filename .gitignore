@@ -17,3 +17,4 @@ $RECYCLE.BIN/
 #Bin
 bin/
 .metadata/
+.recommenders/

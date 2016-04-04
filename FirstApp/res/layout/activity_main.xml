@@ -31,4 +31,11 @@
         android:onClick="a3Call"
         android:text="@string/a3CallbtnName" />
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="TestCall"
+        android:text="@string/TestCallBtnName" />
+
 </LinearLayout>

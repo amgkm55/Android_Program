@@ -29,7 +29,8 @@ public final class R {
         public static final int a1Callbtn=0x7f080002;
         public static final int a2Callbtn=0x7f080003;
         public static final int a3Callbtn=0x7f080004;
-        public static final int action_settings=0x7f080005;
+        public static final int action_settings=0x7f080006;
+        public static final int button1=0x7f080005;
         public static final int mainCallBtn=0x7f080000;
     }
     public static final class layout {
@@ -40,6 +41,7 @@ public final class R {
         public static final int main=0x7f070000;
     }
     public static final class string {
+        public static final int TestCallBtnName=0x7f050007;
         public static final int a1CallbtnName=0x7f050003;
         public static final int a2CallbtnName=0x7f050004;
         public static final int a3CallbtnName=0x7f050005;

@@ -3,7 +3,9 @@ package com.mds.firstapp;
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,9 +33,17 @@ public class MainActivity extends Activity {  //Class 상속관계 확인 Ctrl+T
 		Intent i = new Intent();
 		i.putExtra("path", "myApp/data/test.dat");
 		i.setComponent(cpName);
+		startActivity(i);
 	}
 	public void a3Call(View v) {
-		Toast.makeText(this, "a3 Click", Toast.LENGTH_SHORT).show();
+		Intent i = new Intent("com.mds.action.VIEW");
+		startActivity(i);
+	}
+	
+	public void TestCall(View v) {
+		Intent callI = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.naver.com"));
+		Intent callI3 = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+		startActivity(callI3);
 	}
 
 }

@@ -4,5 +4,6 @@
     <string name="app_name">SecondProj</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_a3_activity">A3_activity</string>
 
 </resources>
