@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FirstApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="a1CallbtnName">a1Call</string>
+    <string name="a2CallbtnName">a2Call</string>
+    <string name="a3CallbtnName">a3Call</string>
+    <string name="mainCallBtnName">MainCall</string>
+    
+
+</resources>
