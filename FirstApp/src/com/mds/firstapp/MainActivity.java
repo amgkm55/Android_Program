@@ -1,6 +1,7 @@
 package com.mds.firstapp;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -25,7 +26,11 @@ public class MainActivity extends Activity {  //Class 상속관계 확인 Ctrl+T
 		startActivity(i);
 	}
 	public void a2Call(View v) {
-		Toast.makeText(this, "a2 Click", Toast.LENGTH_SHORT).show();
+		//2. 다른 프로세스에 있는 컴포넌트를 명시적으로 호출
+		ComponentName cpName = new ComponentName("com.mds.secondproj", "com.mds.secondproj.MainActivity");
+		Intent i = new Intent();
+		i.putExtra("path", "myApp/data/test.dat");
+		i.setComponent(cpName);
 	}
 	public void a3Call(View v) {
 		Toast.makeText(this, "a3 Click", Toast.LENGTH_SHORT).show();
