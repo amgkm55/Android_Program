@@ -1,7 +1,16 @@
 package com.mds.teststartaforresult;
 
 import android.app.Activity;
+import android.os.Bundle;
 
 public class EditActivity extends Activity {
 
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.edit_layout);
+	}
+	
 }
+
