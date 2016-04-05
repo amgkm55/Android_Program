@@ -1,5 +1,6 @@
 package com.mds.teststartaforresult;
 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,10 +9,12 @@ import android.view.MenuItem;
 import android.view.TextureView;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
 	TextView inputTv;
+	public static final int EDIT_MODE = 1;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -20,10 +23,18 @@ public class MainActivity extends Activity {
 	}
 	
 	//Event Create
-	@Override
-	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		// TODO Auto-generated method stub
-		super.onActivityResult(requestCode, resultCode, data);
+//	@Override
+//	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//		// TODO Auto-generated method stub
+//		
+//	}
+	
+	public void editCall(View v) {	
+		Toast.makeText(this, "a1 Click", Toast.LENGTH_SHORT).show();
+		String sendData = inputTv.getText().toString().trim();
+		Intent i = new Intent(this, EditActivity.class);
+		i.putExtra("data", sendData);
+		startActivityForResult(i, EDIT_MODE);
 	}
 	
 	

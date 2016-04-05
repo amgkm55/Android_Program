@@ -20,7 +20,7 @@
         android:id="@+id/button1"
         android:layout_width="117dp"
         android:layout_height="wrap_content"
-        android:onClick="edit"
+        android:onClick="editCall"
         android:text="@string/editBtnName" />
 
 </LinearLayout>
