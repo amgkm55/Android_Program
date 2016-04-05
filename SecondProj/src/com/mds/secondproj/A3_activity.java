@@ -2,8 +2,7 @@ package com.mds.secondproj;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+
 
 public class A3_activity extends Activity {
 
