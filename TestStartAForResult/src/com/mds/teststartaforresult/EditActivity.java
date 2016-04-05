@@ -19,17 +19,22 @@ public class EditActivity extends Activity {
 		Intent recvI = getIntent();
 		String recvData = recvI.getStringExtra("data");
 		if(recvData != null) {
-			myEditT.setText("수신 Data :"+recvData);
+			myEditT.setText(recvData);
 		}
 	}
 	
 	//OK Btn;
 	
-	void callOK(View v) {
-		
+	public void callOK(View v) {
+		//Intent i = new Intent(this, MainActivity.class); //이 방식도 문제가 없지만 그냥 아래코드처럼 날려도 프레임웍이 알아서 보내준다. 
+		String sendData = myEditT.getText().toString().trim();
+		Intent i = new Intent();
+		i.putExtra("data", sendData);
+		setResult(RESULT_OK, i);
+		finish();
 	}
 	
-	void callCancel(View v) {
+	public void callCancel(View v) {
 		
 	}
 	
