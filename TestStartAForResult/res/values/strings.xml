@@ -5,5 +5,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="editBtnName">Edit</string>
+    <string name="okBtnName">OK</string>
+    <string name="cancelBtnName">CANCEL</string>
 
 </resources>

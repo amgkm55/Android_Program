@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="callOK"
-            android:text="Button" />
+            android:text="@string/okBtnName" />
 
         <Button
             android:id="@+id/cancelBtn"
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="callCancel"
-            android:text="Button" />
+            android:text="@string/cancelBtnName" />
     </LinearLayout>
 
 </LinearLayout>
