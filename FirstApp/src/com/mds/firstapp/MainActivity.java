@@ -17,10 +17,11 @@ public class MainActivity extends Activity {  //Class 상속관계 확인 Ctrl+T
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		Toast.makeText(this, "Main onCreate", Toast.LENGTH_SHORT).show();;
 	}
 
 	public void a1Call(View v) {
-		Toast.makeText(this, "a1 Click", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, "a1 BTN Click", Toast.LENGTH_SHORT).show();
 		
 		//A1 Activity 호출
 		//1. 같은 프로세스 내 컴포넌트를 호출하는 방법
@@ -45,5 +46,50 @@ public class MainActivity extends Activity {  //Class 상속관계 확인 Ctrl+T
 		Intent callI3 = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 		startActivity(callI3);
 	}
+	
+	
+
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+		Toast.makeText(this, "Main onStart", Toast.LENGTH_SHORT).show();;
+	}
+
+	@Override
+	protected void onRestart() {
+		// TODO Auto-generated method stub
+		super.onRestart();
+		Toast.makeText(this, "Main onRestart", Toast.LENGTH_SHORT).show();;
+	}
+
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		Toast.makeText(this, "Main onResume", Toast.LENGTH_SHORT).show();;
+	}
+
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		Toast.makeText(this, "Main onPause", Toast.LENGTH_SHORT).show();;
+	}
+
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		super.onStop();
+		Toast.makeText(this, "Main onStop", Toast.LENGTH_SHORT).show();;
+	}
+
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		Toast.makeText(this, "Main onDestroy", Toast.LENGTH_SHORT).show();;
+	}
+	
 
 }
