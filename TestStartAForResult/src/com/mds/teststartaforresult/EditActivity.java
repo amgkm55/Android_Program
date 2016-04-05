@@ -36,6 +36,8 @@ public class EditActivity extends Activity {
 	
 	public void callCancel(View v) {
 		
+		setResult(RESULT_CANCELED);
+		finish();
 	}
 	
 	
