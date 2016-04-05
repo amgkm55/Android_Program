@@ -2,6 +2,7 @@ package com.mds.testservice;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.mtp.MtpStorageInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,7 +23,8 @@ public class MainActivity extends Activity {
 	}
 	
 	public void stopService(View v) {
-		
+		Intent i = new Intent(this, myService.class);
+		stopService(i);
 	}
 	
 }
